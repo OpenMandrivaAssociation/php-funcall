@@ -10,6 +10,7 @@ Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/funcall/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Patch0:		funcall-0.2.5-php53x.diff
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 BuildRequires:	php-devel >= 3:5.2.0
@@ -30,6 +31,8 @@ find . -type f | xargs chmod 644
 # strip away annoying ^M
 find . -type f|xargs file|grep 'CRLF'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
+
+%patch0 -p0
 
 # lib64 fix
 perl -p -i -e "s|/lib\b|/%{_lib}|g" *.m4
