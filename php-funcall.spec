@@ -5,7 +5,7 @@
 Summary:	Add callbacks for any function/method
 Name:		php-%{modname}
 Version:	0.3.0
-Release:	%mkrel 0.0.alpha.3
+Release:	%mkrel 0.0.alpha.4
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/funcall/
