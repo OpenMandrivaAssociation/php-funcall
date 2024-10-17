@@ -8,7 +8,7 @@ Version:	0.3.0
 Release:	%mkrel 0.0.alpha.9
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/funcall/
+URL:		https://pecl.php.net/package/funcall/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}alpha.tgz
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
